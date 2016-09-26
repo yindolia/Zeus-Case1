@@ -29,6 +29,6 @@ The following code block is added to td-agent.conf as a source for parsing the a
 Also check `td-agent.conf` for full configration file. 
 
 
-Note: Please check the file permissions of the logfile.log and logfile.log.pos files. Change to write by others using 
+Note: Please check the file permissions of the `logfile.log` and `logfile.log.pos` files. Add write permissions by others also using 
 
 `$ sudo chmod o+w _filename_`
