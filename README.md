@@ -22,7 +22,7 @@ The following code block is added to td-agent.conf as a source for parsing the a
   path /home/............../logfile.log
   pos_file /home/.........../logfile.log.pos
   tag syslog.nexus
-  format /^\d+\) Event:(?<event>E_\w+), length:(?<length>\d+), at (?<usecs>\d+) usecs (?<bausecs>after|before) (?<ts>\w+ \w+ \d+ \d+:\d+:\d+ \d+)/
+  format /^\d+\) Event:(?<event>E_\w+), length:(?<length>\d+), at (?<usecs>\d+) usecs (?<bausecs>after|before) (?<ts>\w+ \w+ \d+ \d+:\d+:\d+ \d+) (?<message>.*)/
 </source>
 ```
 
