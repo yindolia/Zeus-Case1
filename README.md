@@ -13,18 +13,17 @@ Sample log
 ```1) Event:E_DEBUG, length:71, at 38008 usecs after Fri Sep 16 14:28:41 2016\n
     [102] ethpm_eval_parent_range(1916): Parent ifindex invalid= 0x1a08a000```
     
+The following code block is added to td-agent.conf as a source for parsing the above set of logs from a file.    
     
-    
-
-
-
 
 ```xml
 <source>
   type tail
-  path /home/yogeshvm/programs/logfile1.log
-  pos_file /home/yogeshvm/programs/logfile.log.pos
+  path /home/............../logfile.log
+  pos_file /home/.........../logfile.log.pos
   tag syslog.nexus
   format /^\d+\) Event:(?<event>E_\w+), length:(?<length>\d+), at (?<usecs>\d+) usecs (?<bausecs>after|before) (?<ts>\w+ \w+ \d+ \d+:\d+:\d+ \d+)/
-  </source>
+</source>
 ```
+
+Also check `td-agent.conf` for full configration file. 
