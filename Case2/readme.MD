@@ -4,7 +4,7 @@ We were provided with 5 files with different log formats. Following are the exam
 
 >1. *Sep 27 07:29:57.517: %SPANTREE-5-EXTENDED_SYSID: Extended SysId enabled for type vlanCannot Get the number of ports in MAC notification
 
->2. GigabitEthernet0/1/4 is down, line protocol is down 
+>2. GigabitEthernet0/1/4 is down, line protocol is down \n
   Hardware is A900-IMA8T1Z, address is c8f9.f98d.1f0d (bia c8f9.f98d.1f0d)
   MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec, 
      reliability 255/255, txload 1/255, rxload 1/255
