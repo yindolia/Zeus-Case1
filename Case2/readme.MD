@@ -3,7 +3,35 @@
 We were provided with 5 files with different log formats. Following are the file name and regular expression used to describe their pattern
 
 1. boot_log
-   >Regular Expression : 
+
+>Regular Expression : `\*(?<ts>\w+ \d+ [^ ]+): (?<status>[^ ]+) (?<message>.*)`
+
+>Tag used in Zeus: `bootLog`
+
+2. interface_log
+
+>Regular Expression : `^GigabitEthernet(?<ID>[^ ]+) is (?<status>\w+), (?<message>.*)`
+
+>Tag used in Zeus: `InterfaceStat`
+
+3. mstp_log
+
+>Regular Expression : `\*(?<ts>\w+ \d+ [^ ]+): (?<status>[^ ]+) (?<message>.*)`
+
+>Tag used in Zeus: `mstpLog`
+
+4. sh_run
+
+>Regular Expression : `interface (?<name>[^ ]+)(?<message>.*)`
+
+>Tag used in Zeus: `shRun`
+
+5. sh_cpu
+
+>Regular Expression : `/^[ ]+(?<PID>\d+)[ ]+(?<Runtime>\d+)[ ]+(?<Invoked>\d+)[ ]+(?<usecs>\d+)  (?<fiveSec>\d\.\d+)\%  (?<oneMin>\d\.\d+)\%  (?<fiveMin>\d\.\d+)\%   (?<TTY>\d) (?<Process>.+)/`
+
+>Tag used in Zeus: `shCpu`
+
 
 >1. *Sep 27 07:29:57.517: %SPANTREE-5-EXTENDED_SYSID: Extended SysId enabled for type vlanCannot Get the number of ports in MAC notification
 
