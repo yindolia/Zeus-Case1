@@ -1,6 +1,9 @@
 #CLVS logs Integration to Zeus
 
-We were provided with 5 files with different log formats. Following are the example logs
+We were provided with 5 files with different log formats. Following are the file name and regular expression used to describe their pattern
+
+1. boot_log
+   >Regular Expression : 
 
 >1. *Sep 27 07:29:57.517: %SPANTREE-5-EXTENDED_SYSID: Extended SysId enabled for type vlanCannot Get the number of ports in MAC notification
 
