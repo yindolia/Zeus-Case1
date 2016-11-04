@@ -32,5 +32,6 @@ We were provided with 5 files with different log formats. Following are the file
 
 >Tag used in Zeus: `cpuRun`
 
+The above regular expressions are used in the `in_tail` plugin of FluentD to read log files with captured fields. The [format](http://docs.fluentd.org/articles/in_tail#format-required) "multiline" was used.
 
 
